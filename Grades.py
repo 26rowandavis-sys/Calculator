@@ -1,4 +1,4 @@
-def grade_to_letter(score: int) -> str:
+def grade_to_letter(score: int) -> str: # return numerial value as a string
     if score >= 90:
         return "A"
     elif score >= 80 and score < 90:
