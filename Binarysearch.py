@@ -17,3 +17,10 @@ def search(inputList, target, leftBound, rightBound):
     else:
         return search(inputList, target, mid + 1, rightBound)
     
+
+
+   
+    myList = [0, 3, 4, 9]
+    print (search(myList, 3, 0, len(myList)))
+    print (search(myList, 2, 0, len(myList)))
+    
