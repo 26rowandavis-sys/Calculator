@@ -125,7 +125,7 @@ def searchBackpack(pack, item):
     for i in range(len(pack)):
         if pack [i] == item:
             found = True 
-        return found
+    return found
     
 def openWindow(): 
     slowText ("You decided to try to open the window. ")
