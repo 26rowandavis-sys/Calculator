@@ -1,5 +1,5 @@
+import os
 def start():
-    import os 
     global playerName, locationName, wardrobe
     os.system('cls' if os.name == 'nt' else 'clear')
     slowText("Welcome to the Clothing Recommender!")
@@ -19,10 +19,9 @@ def start():
         ["Shorts", "light", False],
         ["Scarf", "heavy", False],
         ["Rain Jacket", "medium", True],
-        ["Sandals", "light", False],
-    ]
-
-    slowText("Here are some clothing items you might own:")
+        ["Sandals", "light", False]]
+    
+    slowText("Here are some basic clothing items you might own:")
     namesOnly = []
     for item in allClothes:
         namesOnly.append(item[0])
@@ -49,12 +48,11 @@ def start():
     mainMenu()
 
 def recommendScreen(): 
-    import os
-    os.system('cls'if os.name == 'nt' else 'clear')
+    os.system('cls' if os.name == 'nt' else 'clear')
+    slowText("You are looking foor some clothing recommendations! Tell me the weather and I can help you out.")
 
 # what user sees
 def mainMenu():
-    import os
     os.system('cls' if os.name == 'nt' else 'clear')
     slowText("Clothing Recommender Main Menu")
     slowText("You can: ")
@@ -73,7 +71,10 @@ def mainMenu():
         time.sleep(2)
         mainMenu()
 
+# Imports
 import time
+import os
+
 # prints like house game from Mr. James
 def slowText(text, delay=0.01):
     for char in text:
